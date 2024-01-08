@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_notifcation"
+        app:contentInsetStart="0dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:scaleType="fitCenter"
+            android:id="@+id/backNotificationbtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_notifcation"
+        android:id="@+id/NotificationHead"
+        android:background="@drawable/border_only_down"
+        android:paddingVertical="13dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="5dp"
+            app:cardElevation="0sp"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/btn_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_account" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course: "
+                android:layout_toStartOf="@+id/img_unread"
+                android:paddingEnd="10dp"
+                android:layout_alignParentStart="true"
+                android:textSize="22sp"
+                android:id="@+id/txt_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dayBefore . by"
+                android:textSize="13sp"
+                android:layout_below="@+id/txt_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_dayBefore"/>
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_dot"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/img_unread"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/link"
+        android:textSize="16sp"
+        android:layout_below="@+id/NotificationHead"
+        android:layout_marginVertical="10dp"
+        android:text="Course"
+        android:textColor="#0774A5"
+        android:paddingHorizontal="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ContentNoti"
+        android:layout_marginHorizontal="20dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@+id/link"
+        android:background="@drawable/boderup_down">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/boderup_down"
+            android:layout_height="wrap_content"
+            android:id="@+id/contentBox"
+            android:textSize="15sp"
+            android:text="Content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Look_btn"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#FD5F0A">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_look"
+            android:id="@+id/drawer_logout_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/drawer_logout_txt"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

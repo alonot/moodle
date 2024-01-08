@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Moodle</string>
+
+    <string-array name="type_list">
+        <item>All</item>
+        <item>Present</item>
+        <item>Future</item>
+        <item>Past</item>
+        <item>Starred</item>
+        <item>Hidden</item>
+
+    </string-array>
+</resources>

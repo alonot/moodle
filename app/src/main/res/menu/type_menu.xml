@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_all">
+        <item
+            android:title="All"
+            android:id="@+id/type_all"/>
+    </group>
+    <group
+        android:id="@+id/group_pfp"
+        >
+        <item
+            android:title="Present"
+            android:id="@+id/type_present"/>
+        <item
+            android:title="Future"
+            android:id="@+id/type_future"/>
+        <item
+            android:title="Past"
+            android:id="@+id/type_past"/>
+    </group>
+    <group
+        android:id="@+id/group_hidden">
+        <item android:title="Hidden"
+            android:id="@+id/type_hidden"/>
+    </group>
+    <group android:id="@+id/group_starred">
+        <item
+            android:title="Starred"
+            android:id="@+id/type_starred"/>
+    </group>
+</menu>
